@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter- Convert your currency</title>
+    <link rel="stylesheet" href="/CSS/style.css" class="css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        container {
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: palegreen;
+            max-width: 80vw;
+            margin: auto;
+        }
+        .container h1, h2{
+            text-align: center;
+            margin:23px;
+        }
+        .container form input[type='number'], select{
+            background-color: aquamarine;
+            font-size: 25px;
+            margin: 23px 0;
+            width: 200px;
+        }
+
+        .container form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container form label{
+            font-size: 25px;
+            margin-bottom: 13px 0;
+        }
+
+        .button{
+            width:144px;
+            padding:5px 8px;
+            font-size: 20px;
+            background-color: coral;
+            color:white;
+            border-radius: 13px;
+            cursor: pointer;
+
+        }
+
+        .Output table{
+            width:50vw;
+            text-align: center;
+            border:2px solid black;
+            font: size 20px;
+        }
+        
+        /*.output{
+        display:none;}*/
+
+        nav {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            display: flex;
+            font-size: 20px;
+            background-color: rgb(22, 160, 214);
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: rgb(10, 7, 15);
+            transition: all;
+            transition-duration: 500ms;
+        }
+
+        nav li a:hover {
+            text-decoration: none;
+            color: rgb(246, 242, 254);
+        }
+
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 23px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        footer {
+            font-family: 'Poppins', sans-serif;
+            text-align: centre;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Currency Converter</div>
+        <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About Us">About Us</a></li>
+            <li><a href="/Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose the currency to convert</h1>
+        <form id="currency-form">
+            <label for="quantity">Choose a Quantity</label>
+            <input type="number" name="quantity" min="1" max="10000000" required>
+            <label for="Currency">Choose a currency: </label>
+            <select name="currency" style="font-size:25px;">
+                <option value="INR">India</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button class="button" type="submit">Submit</button>
+        </form>
+        
+        <div class="Output">
+            <h2>Here is your converted values in different currencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>    
+   </table> 
+</div>     
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
