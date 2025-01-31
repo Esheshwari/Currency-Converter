@@ -18,7 +18,7 @@ To set up the application locally, follow these steps:
 
 bash
 # Clone the repository
-git clone https://github.com/yourusername/currency-converter-web.git
+git clone https://github.com/Esheshwari/currency-converter-web.git
 
 # Navigate to the project directory
 cd currency-converter-web
@@ -62,7 +62,7 @@ This project uses Git for version control. Here are some useful commands:
 
 bash
 # Clone the repository
-git clone https://github.com/yourusername/currency-converter-web.git
+git clone https://github.com/Esheshwari/currency-converter-web.git
 
 # Create a new branch
 git checkout -b new-branch-name
